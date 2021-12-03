@@ -14,4 +14,11 @@ OCTOPUS
 pip install vosk
 pip install pydub
 pip install ffmpeg
+pip install yola
+pip install gensim
+pip install pymorphy2
+pip install scipy
+pip install counter
 
+```
+Для работы gensim необходимо использовать бинарный модуль, который можно скачать с сайта https://rusvectores.org/ru/models/, подойдет любой, но чем больше вес, тем больше точность и кол-во известных системе слов
