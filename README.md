@@ -17,6 +17,8 @@ pip install ffmpeg
 pip install yola
 pip install gensim
 pip install pymorphy2
+pip install pymorphy2-dicts
+pip install DAWG-Python
 pip install scipy
 pip install counter
 
