@@ -64,5 +64,5 @@ pip install pytesseract
 Для запуска использовать команду в терминале:
 
 ```
-python worked_vidos_1_.py vidos.mp4
+python save_words.py video_name.mp4
 ```
