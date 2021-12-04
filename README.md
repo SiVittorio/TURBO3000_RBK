@@ -48,3 +48,21 @@ python3 octopus.py
 
 ## Использование text_detector.py 
 Данный скрипт принимает на входе json файл с распознанными словами, а возвращает json файл с ключевыми словами и их весом. Также в этом скрипте реализован другой способ распознавания темы, с помощью векторов слов
+
+
+## Обработка видео
+Сначала требуется установаить Anaconda с [официального сайта](https://www.anaconda.com/products/individual)
+
+Далее для корректной работы необходимо провести следующие действия в консоли:
+```
+pip install moviepy
+pip install numpy
+conda install -c anaconda glob2
+pip install Pillow
+pip install pytesseract
+```
+Для запуска использовать команду в терминале:
+
+```
+python worked_vidos_1_.py vidos.mp4
+```
