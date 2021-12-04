@@ -14,15 +14,13 @@ OCTOPUS
 
 ```
 pip install vosk
-pip install pydub
-pip install ffmpeg
 pip install yola
 pip install gensim
 pip install pymorphy2
 pip install pymorphy2-dicts
 pip install DAWG-Python
 pip install scipy
-pip install counter
+pip install moviepy
 ```
 Для работы gensim необходимо использовать бинарную модель, которую можно скачать с сайта https://rusvectores.org/ru/models/, мы использовали модель "news_upos_skipgram_300_5_2019", но подойдут и другие с расширением .bin и тагсетом "Universal tags ". Чем больше вес, тем больше точность и кол-во известных системе слов. 
 
@@ -44,7 +42,7 @@ python3 octopus.py
 На выходе программы получаем 2 файла
 
 1. video_name.txt - субтитры к тексту без какой-либо разметки
-2. video_name_Mono-Results.json - записывается каждое считанное слово, а к нему параметры "start"(начало произнесения слова в секундах), "end"(конец произнесения слова в секундах) и weight(вес выражения как ключевого слова)
+2. video_name_Mono-Results.json - записывается каждое считанное слово, а к нему параметры "start" (начало произнесения слова в секундах), "end" (конец произнесения слова в секундах) и weight (вес выражения как ключевого слова)
 
 ## Использование text_detector.py 
 Данный скрипт принимает на входе json файл с распознанными словами, а возвращает json файл с ключевыми словами и их весом. Также в этом скрипте реализован другой способ распознавания темы, с помощью векторов слов
